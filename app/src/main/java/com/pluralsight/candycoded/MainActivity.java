@@ -83,10 +83,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        super.onOptionsItemSelected(item);
+
         Intent infoIntent = new Intent(this,InfoActivity.class);
         startActivity(infoIntent);
-        return true;
+        return super.onOptionsItemSelected(item);
     }
     // ***
     // TODO - Task 1 - Show Store Information Activity
